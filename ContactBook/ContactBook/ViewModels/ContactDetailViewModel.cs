@@ -70,7 +70,6 @@ namespace ContactBook
                 //ContactUpdated?.Invoke(this, Contact);
 
                 MessagingCenter.Send(this, Events.ContactUpdated, Contact);
-
             }
 
 			await _pageService.PopAsync();
